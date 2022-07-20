@@ -1,0 +1,383 @@
+/* ======================   GOOGLE FONT   =========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header_container a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+p{
+    font-weight: 300;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ======================   HEADER PART START HERE  =========================*/
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    background-color: #161616;
+    color: white;
+    border-radius: 20px;
+    height: 564px;
+    margin-top: 50px;
+    padding: 40px 50px;
+    padding-bottom: 5rem;
+    align-items: center;
+    margin-bottom: 6rem;
+    transition: background-color 2s ease-out;   
+}
+.header_container:hover{
+    background-color: #2C61CE;
+}
+.left-part{
+    padding-left: 2rem;
+}
+.right-part img{
+    width: 85%;
+}
+.btn{
+    background-color: #DD0000;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+/* ======================   HEADER PART START HERE  =========================*/
+
+
+
+
+/* ======================   CONTENT PART START HERE  =========================*/
+.content_container{
+    display: flex;
+}
+
+.side-menu{
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+    margin-right: 30px;
+    transition: background-color 2s ease-out;
+}
+.side-menu:hover{
+    background-color: #2C61CE;
+}
+.nav-button{
+    background-color: white;
+    border:none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 1rem 1rem;
+}
+.nav-button:hover{
+    border:3px solid #DD0000;
+}
+.selected{
+    background-color: #DD0000;
+    text-decoration: none;
+    color: white;
+}
+.nav-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;  
+    font-weight: 500;  
+}
+.nav-button,.selected a{
+    color: white;
+}
+.thumbnail img{
+    width: 100%;
+}
+.simple-btn{
+    padding: 3px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.blog{
+    border: 1px solid rgba(0, 0, 0, 0.147);
+    border-radius: 18px;   
+    transition: background-color .5s ease-out;
+}
+.blog:hover{
+    background-color: #2c62ce12;
+}
+.blogs{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
+}
+.blog-details h4{
+    padding-top: 1rem;
+}
+.blog-details{
+    padding: 1rem;
+}
+.blog-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.i-info{
+    padding-left: 5px;
+}
+/* ======================   CONTENT PART END HERE  =========================*/
+
+
+
+/* ======================   FOOTER PART START HERE  =========================*/
+.footer-container{
+    padding: 102px 50px;
+}
+h3{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: #000000;
+    width: 100%;
+    height: 454px;
+    text-align: center;
+    color: white;
+    margin-top: 5rem;   
+}
+hr{
+    margin: 50px;
+    color: #161616;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    margin: 0 1.5rem;
+    font-weight: 300;    
+}
+.footer-container{
+    background-color: #000000;
+}
+
+.match-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.147);
+    border-radius: 18px;
+    padding: 4rem 1rem;
+}
+.flag{
+    display: flex;
+    align-items: center;
+}
+.flag img{
+    margin: 10px;
+}
+.match-detail{
+    text-align: center;
+}
+
+.lower-button{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.lower-button .btn a{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.social{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.social a{
+    color: white;
+    padding: 1rem;
+}
+/* ======================   FOOTER PART END HERE  =========================*/
+
+
+
+/* =============   MEDIUM SCREEN-MEDIA QUERY START HERE  =============*/
+
+@media screen and (min-width:577px) and (max-width: 977px) {
+   
+    .blogs{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .side-menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        height: 200px;
+        margin:0;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+    }
+    .side-menu .nav-button{
+        border: 1px solid rgba(0, 0, 0, 0.099);
+    }
+    .nav-button a{
+        padding: 0 3rem;
+    }
+    .content_container{
+        display: grid;
+        padding: 0 3rem;
+    }
+    .content-menu{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .match-blog{
+        font-size: 30px;
+    }
+    .hidden-blog{
+        display: none;
+    }
+    .lower-button{
+        display: block;
+        text-align: center;
+    }
+    footer{
+        width: 1200px;
+    }
+    .footer-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+/* =============   MEDIUM SCREEN-MEDIA QUERY END HERE  =============*/
+
+
+/* =============   SMALL SCREEN-MEDIA QUERY START HERE  =============*/
+@media screen and (max-width: 576px){
+    .container{
+        padding: 0 20px;
+    }
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        height: 1477px;
+        margin-bottom: 60px;
+        padding: 40px;
+    }
+
+    .left-part{
+        padding: 80px 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left-part h1{
+        font-size: 86px;
+    }
+    .left-part p{
+        font-size: 40px;
+        padding: 2rem 0;
+    }
+    .btn{
+        font-size: 40px;
+        padding: 20px 50px;
+    }
+    .nav-button{
+        border: 1px solid rgba(0, 0, 0, 0.139);
+    }
+    .nav-button a{
+        font-size: 40px;
+        padding: 0 50px;
+    }
+    .right-part img{
+        width: 663px;
+        margin-left: 150px;
+    }
+    
+    .blogs{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .blog-details{
+        padding: 3rem;
+    }
+    .blog-footer{
+        font-size: 55px;
+    }
+    .blog-header h4{
+        font-size: 50px;
+    }
+    .side-menu{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        width: 100%;
+        height: 200px;
+        margin:0;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+    }
+    .content-menu{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .content_container{
+        display: grid;  
+        grid-template-rows:585px auto;
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+    .match-blog{
+        font-size: 50px;
+    }
+    footer{
+        width: 1200px;
+    }
+    .footer-container{
+        height: 450px;  
+        padding-top: 50px; 
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .simple-btn{
+        font-size: 3rem;
+        padding: 0 50px;
+    }
+}
+/* =============   SMALL SCREEN-MEDIA QUERY END HERE  =============*/
+
